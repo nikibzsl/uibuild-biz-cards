@@ -3,6 +3,22 @@ body {
     font-family: 'EB Garamond', serif;
 }
 
+.cards-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    row-gap: 67px;
+    flex-direction: row;
+    flex-flow: wrap;
+    
+
+    @media (min-width: 801px) {
+            .cards-container {
+                flex-direction: column;
+            }
+    }
+}
+
 .john {
     display: flex;
     flex-direction: column;
@@ -21,8 +37,6 @@ body {
     padding-right: 27px;
     padding-bottom: 27px;
     padding-left: 27px;
-
-
 }
 
 #jheading {
@@ -104,6 +118,24 @@ body {
     padding-bottom: 27px;
     padding-left: 27px;
 
+    #rheading {
+        display: block;
+        font-size: 48px;
+        font-weight: normal;
+    
+        color: #33793f;
+    
+    }
+
 
 }
 
+
+#ranch {
+    color: #999;
+
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
